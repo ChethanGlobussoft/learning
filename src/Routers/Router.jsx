@@ -22,19 +22,19 @@ export default Router;
 const AppRoutes = () => {
   const location = useLocation();
 
-  const isErrorPage = location.pathname !== '/' &&
-                      location.pathname !== '/courses' &&
-                      location.pathname !== '/timings' &&
-                      location.pathname !== '/contact-us';
+  const isErrorPage = location.pathname !== '/learning' &&
+                      location.pathname !== '/learning/courses' &&
+                      location.pathname !== '/learning/timings' &&
+                      location.pathname !== '/learning/contact-us';
 
   return (
     <>
       {!isErrorPage && <Header />}
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/courses' element={<Courses />} />
-        <Route path='/timings' element={<Blogs />} />
-        <Route path='/contact-us' element={<Contact />} />
+        <Route path='/learning/' element={<Home />} />
+        <Route path='/learning/courses' element={<Courses />} />
+        <Route path='/learning/timings' element={<Blogs />} />
+        <Route path='/learning/contact-us' element={<Contact />} />
         {/* <Route path='/trainers' element={<Trainers />} /> */}
         <Route path='*' element={<ErrorHandling />} />
       </Routes>

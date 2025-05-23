@@ -4,11 +4,11 @@ import './header.css'
 
 const Header = () => {
     const navItem = [
-        { id: 1, name: "Home", path: "/" },
-        { id: 2, name: "Course", path: "/courses" },
-        { id: 3, name: "Class Timings", path: "/timings" },
+        { id: 1, name: "Home", path: "/learning" },
+        { id: 2, name: "Course", path: "/learning/courses" },
+        { id: 3, name: "Class Timings", path: "/learning/timings" },
         // { id: 4, name: "Trainers", path: "/trainers" },
-        { id: 5, name: "Contact Us", path: "/contact-us" }
+        { id: 5, name: "Contact Us", path: "/learning/contact-us" }
     ]
 
     return (
